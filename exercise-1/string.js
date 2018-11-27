@@ -69,7 +69,7 @@ console.log("Exercise 1 CamelCase : with number : ");
 console.log( capitalize( 1 , true ) );*/
 
 
-function snakeCase( sentence ) {
+function snake_case( sentence ) {
     if( typeof sentence !== "string" ){
         return '';
     }
