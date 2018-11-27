@@ -42,7 +42,12 @@ function capitalize( sentence, isCamelCase ) {
                 finalSentence += ucfirst( words[i] );
             }
             else{
-                finalSentence += ucfirst( words[i] ) + ' ';
+                if( i === ( words.length ) - 1 ){
+                    finalSentence += ucfirst( words[i] );
+                }
+                else{
+                    finalSentence += ucfirst( words[i] ) + ' ';
+                }
             }
 
         }
