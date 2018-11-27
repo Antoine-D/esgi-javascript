@@ -147,15 +147,34 @@ function yoda( sentence ) {
     return final;
 }
 
-console.log("Exercise 1 Yoda : with string : ");
+/*console.log("Exercise 1 Yoda : with string : ");
 console.log( yoda( "toto est une tapette") );
 console.log("Exercise 1 Yoda : with number : ");
-console.log( yoda( 1 ) );
+console.log( yoda( 1 ) );*/
 
 function verlan( sentence ) {
 
+    if( typeof sentence !== "string" ){
+        return '';
+    }
 
+    var words = sentence.split(' ');
+    var tab = [];
+    var final = "";
+
+    for( var i = 0; i < words.length; i++ ){
+
+        var lengh = ( words[i].length ) - 1;
+
+        for( var y = lengh; y >= 0; y-- ){
+            final += words[i][y];
+        }
+        final += " ";
+    }
+return final;
 }
+
+console.log( verlan( "yoda m Luke" ) );
 
 
 
