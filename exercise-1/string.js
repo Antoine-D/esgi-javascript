@@ -130,7 +130,13 @@ function yoda( sentence ) {
 
     for( var i = lengh; i >= 0  ; i -- ){
 
-        final += words[i] + ' ';
+        if( i == 0 ){
+            final += words[i];
+        }
+        else{
+            final += words[i] + ' ';
+        }
+
     }
 
     return final;
