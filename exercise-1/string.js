@@ -169,12 +169,12 @@ function verlan( sentence ) {
         for( var y = lengh; y >= 0; y-- ){
             final += words[i][y];
         }
-        final += " ";
+        //final += " ";
     }
 return final;
 }
 
-console.log( verlan( "yoda m Luke" ) );
+//console.log( verlan( "yoda m Luke" ) );
 
 
 
